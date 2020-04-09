@@ -1,7 +1,7 @@
 @use "vars" as v;
 @use "animation" as a;
 
-.header-block {
+.header {
   // opacity: 0.1;
   display: flex;
   position: fixed;
@@ -15,13 +15,13 @@
   // padding: 0 24px;
   box-shadow: 6px 6px 3px rgb(0, 0, 0, 0.4);
 
-  .header-col-1 {
+  &-col-1 {
     flex: 1;
     margin: 0 0 0 v.$padding;
     // background-color: red;
   }
 
-  .header-title {
+  &-title {
     // background-color: green;
 
     h1 {
@@ -31,27 +31,26 @@
     }
   }
 
-  .header-col-2 {
+  &-col-2 {
     display: flex;
     flex: 1;
     align-items: center;
     margin: 0 v.$padding 0 0;
     // background-color: blue;
+  }
 
-    nav {
-      display: block;
-      margin: 0 0 0 auto;
-      // background-color: pink;
+  &-nav {
+    display: block;
+    margin: 0 0 0 auto;
+    // background-color: pink;
 
-      ul {
-        list-style-type: none;
-        margin: 0;
-      }
+    &-ul {
+      list-style-type: none;
+      margin: 0;
+    }
 
-      i {
-        font-size: 1.6em;
-        margin-bottom: 3px;
-      }
+    &-li {
+      float: left;
 
       a {
         display: block;
@@ -66,14 +65,15 @@
         }
       }
     }
+
+    &-li-button {
+      display: flex;
+      flex-direction: column;
+
+      i {
+        font-size: 1.6em;
+        margin-bottom: 3px;
+      }
+    }
   }
-}
-
-.nav-li {
-  float: left;
-}
-
-.nav-li-div {
-  display: flex;
-  flex-direction: column;
 }

@@ -61,6 +61,11 @@ ul {
   list-style-type: square;
 }
 
+footer {
+  text-align: center;
+  margin: (v.$padding / 2) 0;
+}
+
 .body-container {
   max-width: v.$body-width;
   margin: 0 auto;
@@ -69,9 +74,4 @@ ul {
 
 .main-container {
   padding: (v.$padding * 5) (v.$padding * 4) v.$padding;
-}
-
-footer {
-  text-align: center;
-  margin: (v.$padding / 2) 0;
 }
