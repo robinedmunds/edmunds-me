@@ -1,0 +1,79 @@
+@use "vars" as v;
+@use "animation" as a;
+
+.header-block {
+  // opacity: 0.1;
+  display: flex;
+  position: fixed;
+  max-width: v.$body-width;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  height: 6.0em;
+  background-color: v.$colour-dark;
+  color: #fff;
+  // padding: 0 24px;
+  box-shadow: 6px 6px 3px rgb(0, 0, 0, 0.4);
+
+  .header-col-1 {
+    flex: 1;
+    margin: 0 0 0 v.$padding;
+    // background-color: red;
+  }
+
+  .header-title {
+    // background-color: green;
+
+    h1 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 3.0em;
+    }
+  }
+
+  .header-col-2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 0 v.$padding 0 0;
+    // background-color: blue;
+
+    nav {
+      display: block;
+      margin: 0 0 0 auto;
+      // background-color: pink;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+      }
+
+      i {
+        font-size: 1.6em;
+        margin-bottom: 3px;
+      }
+
+      a {
+        display: block;
+        padding: 0 (v.$padding / 2);
+        color: #fff;
+        font-size: 1.6rem;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          @include a.mfadecolour(#fff, limegreen, v.$animation-duration);
+        }
+      }
+    }
+  }
+}
+
+.nav-li {
+  float: left;
+}
+
+.nav-li-div {
+  display: flex;
+  flex-direction: column;
+}

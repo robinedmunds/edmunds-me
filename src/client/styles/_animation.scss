@@ -1,0 +1,21 @@
+@mixin mfadecolour($from-colour, $to-colour, $duration) {
+  @keyframes fadecolour {
+    from {color: $from-colour;}
+    to {color: $to-colour;}
+  }
+
+  animation-name: fadecolour;
+  animation-duration: $duration;
+  color: $to-colour;
+}
+
+@mixin mfadebgcolour($from-colour, $to-colour, $duration) {
+  @keyframes fadebgcolour {
+    from {background-color: $from-colour;}
+    to {background-color: $to-colour;}
+  }
+
+  animation-name: fadebgcolour;
+  animation-duration: $duration;
+  background-color: $to-colour;
+}

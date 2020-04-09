@@ -1,0 +1,106 @@
+@use "vars" as v;
+@use "animation" as a;
+
+.project-card {
+  display: flex;
+  width: 100%;
+  margin: (v.$padding * 2) auto;
+  // padding: 100px;
+  background-color: v.$colour-medium;
+  box-shadow: 6px 6px 3px rgb(0, 0, 0, 0.4);
+
+  .project-card-col1,
+  .project-card-col2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin: (v.$padding * 2);
+  }
+
+  .project-card-col1 {
+    // background-color: #fff;
+
+  }
+
+  .card-screenshot {
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: (v.$padding * 2) 0 0 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .card-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: v.$colour-dark;
+    color: #fff;
+    font-size: 2.0em;
+    height: (v.$padding * 3);
+    width: (v.$padding * 3);
+
+    &:hover {
+      // @include v.mfadebgcolour(#fff, #333, v.$animation-duration);  // flash effect
+      @include a.mfadebgcolour(v.$colour-dark, v.$colour-highlight, v.$animation-duration);
+    }
+  }
+}
+
+.card-text {
+  p {
+    margin-bottom: 1em;
+  }
+
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.9em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.8em;
+  }
+
+}
+
+.card-tech {
+  // column-count: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  // max-width: 80%;
+  // margin: 0 auto;
+}
+
+.card-tech-element {
+  flex: 1 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // font-size: 1.2em;
+  text-align: center;
+  margin: (v.$padding / 2) 0;
+
+  i {
+    font-size: 3.0rem;
+  }
+}
