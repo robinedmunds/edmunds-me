@@ -1,6 +1,7 @@
 @use "vars" as v;
 @use "animation" as a;
 
+
 .project-card {
   display: flex;
   width: 100%;
@@ -51,8 +52,7 @@
     width: (v.$padding * 3);
 
     &:hover {
-      // @include v.mfadebgcolour(#fff, #333, v.$animation-duration);  // flash effect
-      @include a.project-card-button-anim;
+        @include a.fade(background-color, v.$colour-dark, v.$colour-highlight);
     }
   }
 

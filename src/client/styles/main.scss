@@ -1,12 +1,11 @@
 @use "vars" as v;
 @use "animation" as a;
 
+
 body {
   font-family: v.$font;
   font-size: v.$font-size;
 }
-
-
 
 footer {
   text-align: center;
@@ -49,9 +48,7 @@ footer {
     color: v.$colour-highlight;
 
     &:hover {
-      @include a.text-link-anim;
-      // color: #333;
-      // background-color: #333;
+      @include a.fade(background-color, v.$colour-light, v.$colour-dark);
     }
   }
 

@@ -1,34 +1,16 @@
+@use "sass:string";
 @use "vars" as v;
 
-@mixin nav-button-anim {
-  @keyframes fadecolour {
-    from {color: none;}
-    to {color: v.$colour-highlight;}
+
+@mixin fade($property, $from-colour, $to-colour) {
+  $keyframe-id: string.unique-id();  // generates random id
+
+  @keyframes #{$keyframe-id} {
+    from {#{$property}: $from-colour;}
+    to {#{$property}: $to-colour;}
   }
 
-  animation-name: fadecolour;
+  animation-name: $keyframe-id;
   animation-duration: v.$animation-duration;
-  color: v.$colour-highlight;
-}
-
-@mixin text-link-anim {
-  @keyframes fadebgcolour {
-    from {background-color: none;}
-    to {background-color: v.$colour-dark;}
-  }
-
-  animation-name: fadebgcolour;
-  animation-duration: v.$animation-duration;
-  background-color: v.$colour-dark;
-}
-
-@mixin project-card-button-anim {
-  @keyframes fadebgcolour {
-    from {background-color: v.$colour-dark;}
-    to {background-color: v.$colour-highlight;}
-  }
-
-  animation-name: fadebgcolour;
-  animation-duration: v.$animation-duration;
-  background-color: v.$colour-highlight;
+  #{$property}: $to-colour;
 }

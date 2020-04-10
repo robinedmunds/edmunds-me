@@ -1,6 +1,7 @@
 @use "vars" as v;
 @use "animation" as a;
 
+
 .header {
   // opacity: 0.1;
   display: flex;
@@ -61,7 +62,7 @@
         text-align: center;
 
         &:hover {
-          @include a.nav-button-anim;
+          @include a.fade(color, #fff, v.$colour-highlight);
         }
       }
     }
