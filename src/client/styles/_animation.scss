@@ -1,21 +1,34 @@
-@mixin mfadecolour($from-colour, $to-colour, $duration) {
+@use "vars" as v;
+
+@mixin nav-button-anim {
   @keyframes fadecolour {
-    from {color: $from-colour;}
-    to {color: $to-colour;}
+    from {color: none;}
+    to {color: v.$colour-highlight;}
   }
 
   animation-name: fadecolour;
-  animation-duration: $duration;
-  color: $to-colour;
+  animation-duration: v.$animation-duration;
+  color: v.$colour-highlight;
 }
 
-@mixin mfadebgcolour($from-colour, $to-colour, $duration) {
+@mixin text-link-anim {
   @keyframes fadebgcolour {
-    from {background-color: $from-colour;}
-    to {background-color: $to-colour;}
+    from {background-color: none;}
+    to {background-color: v.$colour-dark;}
   }
 
   animation-name: fadebgcolour;
-  animation-duration: $duration;
-  background-color: $to-colour;
+  animation-duration: v.$animation-duration;
+  background-color: v.$colour-dark;
+}
+
+@mixin project-card-button-anim {
+  @keyframes fadebgcolour {
+    from {background-color: v.$colour-dark;}
+    to {background-color: v.$colour-highlight;}
+  }
+
+  animation-name: fadebgcolour;
+  animation-duration: v.$animation-duration;
+  background-color: v.$colour-highlight;
 }

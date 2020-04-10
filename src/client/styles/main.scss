@@ -6,60 +6,7 @@ body {
   font-size: v.$font-size;
 }
 
-h1,
-h2,
-h3 {
-  margin: 2.0em 0 1.0em;
-  font-weight: bold;
-}
 
-p {
-  margin-bottom: 2.0em;
-}
-
-h1 {
-  font-size: 2.0em;
-}
-
-h2 {
-  font-size: 1.6em;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
-a {
-  color: v.$colour-highlight;
-
-  &:hover {
-    @include a.mfadebgcolour(pink, red, 4s);
-  }
-}
-
-strong {
-  font-weight: bold;
-  background-color: v.$colour-dark;
-  color: #fff;
-}
-
-em {
-  font-style: italic;
-}
-
-ol,
-ul {
-  margin: (v.$padding * 2) (v.$padding * 3);
-  list-style-position: outside;
-}
-
-ol {
-  list-style-type: normal;
-}
-
-ul {
-  list-style-type: square;
-}
 
 footer {
   text-align: center;
@@ -74,4 +21,61 @@ footer {
 
 .main-container {
   padding: (v.$padding * 5) (v.$padding * 4) v.$padding;
+
+  h1,
+  h2,
+  h3 {
+    margin: 2.0em 0 1.0em;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 2.0em;
+  }
+
+  h1 {
+    font-size: 2.0em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  a {
+    color: v.$colour-highlight;
+
+    &:hover {
+      @include a.text-link-anim;
+      // color: #333;
+      // background-color: #333;
+    }
+  }
+
+  strong {
+    font-weight: bold;
+    background-color: v.$colour-dark;
+    color: #fff;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  ol,
+  ul {
+    margin: (v.$padding * 2) (v.$padding * 3);
+    list-style-position: outside;
+  }
+
+  ol {
+    list-style-type: normal;
+  }
+
+  ul {
+    list-style-type: square;
+  }
 }

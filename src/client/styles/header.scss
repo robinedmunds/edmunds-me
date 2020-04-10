@@ -61,7 +61,7 @@
         text-align: center;
 
         &:hover {
-          @include a.mfadecolour(#fff, limegreen, v.$animation-duration);
+          @include a.nav-button-anim;
         }
       }
     }
