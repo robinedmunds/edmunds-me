@@ -2,12 +2,35 @@
 @use "animation" as a;
 
 
+.project-card-tab {
+  display: flex;
+  height: 4em;
+  width: 40%;
+  background-color: v.$colour-dark;
+  color: v.$colour-light;
+  border-radius: v.$border-radius 0 0 0;
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+
+  &-title {
+    margin: auto (v.$padding * 2);
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
 .project-card {
   display: flex;
   width: 100%;
-  margin: (v.$padding * 2) auto;
+  margin: 0 auto (v.$padding * 2) auto;
   background-color: v.$colour-medium;
+  border-radius: 0 v.$border-radius v.$border-radius v.$border-radius;
   box-shadow: 6px 6px 3px rgb(0, 0, 0, 0.4);
+  z-index: 3;
 
   &-col1,
   &-col2 {
@@ -51,7 +74,7 @@
   }
 
   &-text {
-    h2 {
+    h3 {
       margin-top: 0;
     }
   }
