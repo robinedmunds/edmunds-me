@@ -2,6 +2,8 @@
 @use "animation" as a;
 
 
+@media only screen and (min-width: 1280px) {
+
 .project-card-tab {
   display: flex;
   height: 4em;
@@ -102,3 +104,5 @@
     }
   }
 }
+
+}  // @media

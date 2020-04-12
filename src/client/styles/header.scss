@@ -1,6 +1,7 @@
 @use "vars" as v;
 @use "animation" as a;
 
+@media only screen and (min-width: 1280px) {
 
 .header {
   // opacity: 0.1;
@@ -79,3 +80,5 @@
     }
   }
 }
+
+}  // @media

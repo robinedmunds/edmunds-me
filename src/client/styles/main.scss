@@ -2,6 +2,8 @@
 @use "animation" as a;
 
 
+@media only screen and (min-width: 1280px) {
+
 html {
   font-family: v.$font;
   font-size: v.$font-size;
@@ -76,3 +78,5 @@ footer {
     list-style-type: square;
   }
 }
+
+}  // @media
