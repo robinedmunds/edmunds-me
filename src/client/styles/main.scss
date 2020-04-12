@@ -2,20 +2,20 @@
 @use "animation" as a;
 
 
-body {
+html {
   font-family: v.$font;
   font-size: v.$font-size;
-}
-
-footer {
-  text-align: center;
-  margin: (v.$padding / 2) 0;
 }
 
 .body-container {
   max-width: v.$body-width;
   margin: 0 auto;
   background-color: v.$colour-light;
+}
+
+footer {
+  text-align: center;
+  margin: (v.$padding / 2) 0;
 }
 
 .main-container {
