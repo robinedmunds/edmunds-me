@@ -19,6 +19,7 @@
 
     h2 {
       margin: 0;
+      font-weight: 400;
     }
   }
 }
@@ -44,6 +45,7 @@
   &-screenshot {
     img {
       width: 100%;
+      box-shadow: 6px 6px 3px rgb(0, 0, 0, 0.4);
     }
   }
 
@@ -63,10 +65,11 @@
     align-items: center;
     justify-content: center;
     background-color: v.$colour-dark;
-    color: #fff;
+    color: v.$colour-lightest;
     font-size: 2.0em;
     height: (v.$padding * 3);
     width: (v.$padding * 3);
+    box-shadow: 6px 6px 3px rgb(0, 0, 0, 0.4);
 
     &:hover {
         @include a.fade(background-color, v.$colour-dark, v.$colour-highlight);
