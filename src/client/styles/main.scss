@@ -2,8 +2,6 @@
 @use "animation" as a;
 
 
-@media only screen and (min-width: 1280px) {
-
 html {
   font-family: v.$font;
   font-size: v.$font-size;
@@ -21,7 +19,7 @@ footer {
 }
 
 .main-container {
-  padding: (v.$padding * 5) (v.$padding * 4) v.$padding;
+  padding: (v.$padding * 2) (v.$padding * 2);
 
   h1,
   h2,
@@ -77,6 +75,12 @@ footer {
   ul {
     list-style-type: square;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+
+.main-container {
+  padding: (v.$padding * 5) (v.$padding * 4);
 }
 
 }  // @media
