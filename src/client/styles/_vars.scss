@@ -10,3 +10,7 @@ $colour-highlight: fuchsia;
 $body-width: 1680px;
 $animation-duration: 333ms;
 $border-radius: 20px;
+
+@mixin text-margin {
+  margin-top: 1.6em;
+}

@@ -3,20 +3,33 @@
 
 
 html {
-  font-size: v.$font-size;
   font-family: v.$font;
+  font-size: v.$font-size;
+}
+
+.body-container {
+  max-width: v.$body-width;
+  padding: 0 auto;
+  background-color: v.$colour-light;
+}
+
+footer {
+  text-align: center;
+  padding: (v.$padding / 2) 0;
+}
+
+.main-container {
+  padding: (v.$padding * 2) (v.$padding * 1);
 
   h1,
   h2,
   h3 {
+    padding: 2.0em 0 1.0em;
     font-weight: bold;
   }
 
-  p,
-  h1,
-  h2,
-  h3 {
-    @include v.text-margin;
+  p {
+    padding-bottom: 2.0em;
   }
 
   h1 {
@@ -64,6 +77,10 @@ html {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+
 .main-container {
-  margin: 0 v.$padding;
+  padding: (v.$padding * 5) (v.$padding * 4);
 }
+
+}  // @media
