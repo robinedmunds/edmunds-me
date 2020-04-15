@@ -9,13 +9,13 @@ html {
 
 .body-container {
   max-width: v.$body-width;
-  padding: 0 auto;
+  margin: 0 auto;
   background-color: v.$colour-light;
 }
 
 footer {
   text-align: center;
-  padding: (v.$padding / 2) 0;
+  margin: (v.$padding / 2) 0;
 }
 
 .main-container {
@@ -24,12 +24,12 @@ footer {
   h1,
   h2,
   h3 {
-    padding: 2.0em 0 1.0em;
+    margin: 2.0em 0 1.0em;
     font-weight: bold;
   }
 
   p {
-    padding-bottom: 2.0em;
+    margin-bottom: 2.0em;
   }
 
   h1 {
