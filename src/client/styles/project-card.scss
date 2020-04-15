@@ -3,7 +3,7 @@
 
 
 .project-card {
-  background-color: v.$colour-light;
+  background-color: v.$colour-medium;
   margin: (v.$padding * 2) 0;
 
   &-tab,
@@ -24,8 +24,10 @@
     padding-bottom: (v.$padding * 2);
   }
 
-  &-screenshot {
+  &-img {
     margin: v.$padding 0;
+    @include v.shadow;
+
     img {
       width: 100%;
     }
@@ -50,6 +52,7 @@
     font-size: 2.4rem;
     background-color: v.$colour-dark;
     color: v.$colour-lightest;
+    @include v.shadow;
 
     &:hover {
       @include a.fade(background-color, #555, v.$colour-highlight)
@@ -58,14 +61,17 @@
 
   &-tech {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-flow: wrap;
 
     &-icon {
+      flex: 140px;
       display: flex;
       padding: v.$padding;
       flex-direction: column;
       align-items: center;
       font-size: 1.2rem;
+      text-align: center;
 
       i {
         font-size: 2.0rem;

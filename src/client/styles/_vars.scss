@@ -1,7 +1,7 @@
 $font-size: 16pt;
 $font: sans-serif;
 $padding: 24px;
-$shadow-size: 6px;
+$shadow-size: 3px;
 $colour-dark: #333;
 $colour-medium: #bbb;
 $colour-light: #eee;
@@ -13,4 +13,8 @@ $border-radius: 20px;
 
 @mixin text-margin {
   margin-top: 1.6em;
+}
+
+@mixin shadow {
+  box-shadow:  6px 6px 6px rgb(0, 0, 0, 0.4);
 }
