@@ -47,7 +47,7 @@
 
     p {
       margin: 0;
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-align: center;
       color: v.$colour-lightest;
       font-family: v.$font;
@@ -60,7 +60,7 @@
 
 .header {
   flex-direction: row;
-  padding: 0.5rem 0;
+  // padding: 0.5rem;
   // position: fixed;
   // top: 0;
   // width: 100%;
@@ -85,14 +85,12 @@
 
   &-nav-li-button {
     background-color: unset;
-    padding: 0.5em;
+    padding: 1.4rem;
 
     i {
-      display: inline;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4px;
       font-size: 2.0em;
       color: v.$colour-lightest;
     }
