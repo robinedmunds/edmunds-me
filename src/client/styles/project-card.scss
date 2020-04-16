@@ -100,9 +100,9 @@
       border-radius: v.$border-radius 0 0 0;
       padding: 1.0rem;
 
-      // h2 {
-      //   background-color: teal;
-      // }
+      h2 {
+        color: v.$colour-lightest;
+      }
     }
 
   &-img {
