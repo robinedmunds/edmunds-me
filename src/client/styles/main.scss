@@ -72,21 +72,27 @@ html {
   margin: 0 v.$padding;
 }
 
-footer {
-  text-align: center;
-  padding: 0 0 v.$padding;
+.footer {
+  padding: v.$padding 0;
+  background-color: v.$colour-lightest;
+
+  p {
+    text-align: center;
+    color: v.$colour-dark;
+    margin: 0;
+  }
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: v.$desktop-min-width) {
 
-  .body-container {
-    max-width: v.$max-width;
-    margin: 0 auto;
-  }
+.body-container {
+  max-width: v.$max-width;
+  margin: 0 auto;
+}
 
-  .main-container article {
-    margin: 0 (v.$padding * 4);
-  }
+.main-container article {
+  margin: 0 (v.$padding * 4);
+}
 
 } // @media

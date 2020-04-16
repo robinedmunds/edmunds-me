@@ -11,6 +11,7 @@ $body-width: 1680px;
 $animation-duration: 333ms;
 $border-radius: 24px;
 $max-width: 1680px;
+$desktop-min-width: 1080px;
 
 @mixin text-margin {
   margin-top: 1.6em;
