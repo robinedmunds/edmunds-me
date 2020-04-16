@@ -16,7 +16,13 @@ html {
   h1,
   h2,
   h3 {
+    color: v.$font-colour;
     @include v.text-margin;
+  }
+
+  p {
+    font-family: v.$font-p;
+    line-height: 1.6em;
   }
 
   h1 {
@@ -53,6 +59,8 @@ html {
   ul {
     margin: (v.$padding * 2) (v.$padding * 3);
     list-style-position: outside;
+    font-family: v.$font-p;
+    color: v.$font-colour;
   }
 
   ol {

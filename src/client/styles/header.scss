@@ -50,6 +50,7 @@
       font-size: 1.4em;
       text-align: center;
       color: v.$colour-lightest;
+      font-family: v.$font;
     }
   }
 }
@@ -59,6 +60,7 @@
 
 .header {
   flex-direction: row;
+  padding: 0.5rem 0;
   // position: fixed;
   // top: 0;
   // width: 100%;
