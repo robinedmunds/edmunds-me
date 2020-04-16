@@ -19,6 +19,6 @@ $desktop-min-width: 1080px;
   margin-top: 1.6em;
 }
 
-@mixin shadow {
-  box-shadow:  6px 6px 6px rgb(0, 0, 0, 0.4);
+@mixin shadow($size) {
+  box-shadow: $size $size $size rgb(0, 0, 0, 0.4);
 }

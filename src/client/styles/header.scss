@@ -60,6 +60,7 @@
 
 .header {
   flex-direction: row;
+  @include v.shadow(8px);
   // padding: 0.5rem;
   // position: fixed;
   // top: 0;

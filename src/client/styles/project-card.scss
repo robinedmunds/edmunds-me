@@ -27,7 +27,7 @@
   &-img {
     margin: v.$padding auto;
     max-width: 800px;
-    @include v.shadow;
+    @include v.shadow(6px);
 
     img {
       width: 100%;
@@ -55,7 +55,7 @@
     font-size: 2.4rem;
     background-color: v.$colour-dark;
     color: v.$colour-lightest;
-    @include v.shadow;
+    @include v.shadow(6px);
 
     &:hover {
       @include a.fade(background-color, #555, v.$colour-highlight)
@@ -123,6 +123,7 @@
     justify-content: space-around;
     align-items: center;
     padding: v.$padding*2;
+    @include v.shadow(8px);
   }
 
   &-1 {
