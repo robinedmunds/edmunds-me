@@ -3,7 +3,12 @@
 
 
 .blog {
-  background-color: wheat;
+  // background-color: wheat;
+
+  &-1,
+  &-2 {
+    padding: 0 v.$padding;
+  }
 }
 
 
@@ -12,13 +17,8 @@
 .blog {
   display: grid;
   grid-template-areas: "gArticle gArticle gNav";
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
   padding: 0 v.$padding*3;
-
-  &-1,
-  &-2 {
-    padding: 0 v.$padding;
-  }
 
   &-1 {
     grid-area: gArticle;
@@ -29,7 +29,6 @@
   }
 
   &-nav {
-    float: right;
 
   }
 }
