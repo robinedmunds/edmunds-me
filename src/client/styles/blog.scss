@@ -3,7 +3,7 @@
 
 
 .blog {
-  // background-color: wheat;
+  background-color: wheat;
 
   &-1,
   &-2 {
@@ -29,7 +29,10 @@
   }
 
   &-nav {
-
+    ul {
+      margin: v.$padding*2 0 v.$padding*3 v.$padding*2;
+      line-height: 1.8em;
+    }
   }
 }
 
