@@ -10,7 +10,7 @@ const rmElements = () => {
   ]
 
   for (const i of a) {
-    for (const i of i){
+    for (const i of i) {
       i.remove()
     }
   }
