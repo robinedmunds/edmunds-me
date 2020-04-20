@@ -3,11 +3,20 @@
 
 
 .blog {
-  background-color: wheat;
+  // background-color: wheat;
 
   &-1,
   &-2 {
     padding: 0 v.$padding;
+  }
+
+  &-article {
+    // background-color: #fff;
+
+    &-date {
+      opacity: 0.6;
+    }
+
   }
 
   &-nav {
