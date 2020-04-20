@@ -57,7 +57,7 @@ html {
 
   ol,
   ul {
-    margin: (v.$padding * 2) (v.$padding * 3);
+    margin: (v.$padding * 2) 0 (v.$padding * 2) (v.$padding * 3);
     list-style-position: outside;
     font-family: v.$font-p;
     color: v.$font-colour;
