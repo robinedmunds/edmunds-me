@@ -9,6 +9,17 @@
   &-2 {
     padding: 0 v.$padding;
   }
+
+  &-nav {
+    ul {
+      margin: v.$padding*2 0 v.$padding*3 v.$padding*2;
+      line-height: 1.8em;
+    }
+
+    &-li a {
+      text-decoration: none;
+    }
+  }
 }
 
 
@@ -26,13 +37,6 @@
 
   &-2 {
     grid-area: gNav;
-  }
-
-  &-nav {
-    ul {
-      margin: v.$padding*2 0 v.$padding*3 v.$padding*2;
-      line-height: 1.8em;
-    }
   }
 }
 
