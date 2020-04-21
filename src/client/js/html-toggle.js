@@ -1,4 +1,4 @@
-"strict"
+"use strict"
 
 console.log("hello from html-toggle.js")
 
@@ -12,13 +12,13 @@ const rmElements = () => {
     // document.querySelector(".blog"),
   ]
 
-  for (q of all) {
-    for (e of q) {
+  for (const q of all) {
+    for (const e of q) {
       e.remove()
     }
   }
 
-  for (e of single) {
+  for (const e of single) {
       e.remove()
     }
 
