@@ -5,6 +5,7 @@
 .project-card {
   background-color: v.$colour-medium;
   margin: v.$padding*3 0;
+  border-radius: v.$border-radius;
 
   &-name,
   &-1,
