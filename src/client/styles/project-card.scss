@@ -4,7 +4,7 @@
 
 .project-card {
   background-color: v.$colour-medium;
-  margin: (v.$padding * 2) 0;
+  margin: v.$padding*3 0;
 
   &-name,
   &-1,
@@ -91,7 +91,6 @@
   grid-template-rows: repeat(2, 1fr) fit-content;
   grid-template-columns: repeat(12, 1fr) max-content;
   background-color: unset;
-  margin: v.$padding * 4;
 
   &-name {
     grid-area: 1 / 1 / 1 / 6;

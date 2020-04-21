@@ -76,7 +76,7 @@ html {
   background-color: v.$colour-light;
 }
 
-.main-container article {
+.main-container {
   margin: 0 v.$padding;
 }
 
@@ -99,7 +99,7 @@ html {
   margin: 0 auto;
 }
 
-.main-container article {
+.main-container {
   margin: 0 (v.$padding * 4);
 }
 

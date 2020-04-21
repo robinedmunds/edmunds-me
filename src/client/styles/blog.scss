@@ -7,7 +7,7 @@
 
   &-1,
   &-2 {
-    padding: 0 v.$padding;
+    // padding: 0 v.$padding;
   }
 
   &-article {
@@ -38,14 +38,16 @@
   display: grid;
   grid-template-areas: "gArticle gArticle gNav";
   // grid-template-columns: repeat(3, 1fr);
-  padding: 0 v.$padding*3;
+  // padding: 0 v.$padding*3;
 
   &-1 {
     grid-area: gArticle;
+    padding-right: v.$padding;
   }
 
   &-2 {
     grid-area: gNav;
+    padding-left: v.$padding;
   }
 }
 
