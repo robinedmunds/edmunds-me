@@ -65,17 +65,20 @@
 
   &-tech {
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    flex-flow: row wrap;
+    padding-top: v.$padding;
+    // align-content: space-around;
+    justify-content: space-around;
 
     &-icon {
-      flex: 140px;
+      flex: 25%;
+      padding: v.$padding 0;
       display: flex;
-      margin: 12px 6px;
       flex-direction: column;
       align-items: center;
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       text-align: center;
+      // background-color: #fff;
 
       i {
         font-size: 2.0rem;

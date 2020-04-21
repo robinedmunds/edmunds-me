@@ -8,7 +8,7 @@ const rmElements = () => {
     // document.querySelectorAll(".project-card"),
   ]
   let single = [
-    document.querySelector(".project-card"),
+    // document.querySelector(".project-card"),
     document.querySelector(".blog"),
   ]
 
@@ -24,4 +24,4 @@ const rmElements = () => {
 
 }
 
-rmElements()
+// rmElements()
