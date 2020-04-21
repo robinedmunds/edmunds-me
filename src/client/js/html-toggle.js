@@ -3,17 +3,25 @@
 console.log("hello from html-toggle.js")
 
 const rmElements = () => {
-  let a = [
+  let all = [
     document.querySelectorAll("article"),
-    document.querySelectorAll(".project-card"),
-    // document.querySelectorAll(".blog")
+    // document.querySelectorAll(".project-card"),
+  ]
+  let single = [
+    document.querySelector(".project-card"),
+    // document.querySelector(".blog"),
   ]
 
-  for (const i of a) {
-    for (const i of i) {
-      i.remove()
+  for (q of all) {
+    for (e of q) {
+      e.remove()
     }
   }
+
+  for (e of single) {
+      e.remove()
+    }
+
 }
 
 rmElements()
