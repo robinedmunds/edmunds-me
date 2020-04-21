@@ -9,7 +9,7 @@ const rmElements = () => {
   ]
   let single = [
     document.querySelector(".project-card"),
-    // document.querySelector(".blog"),
+    document.querySelector(".blog"),
   ]
 
   for (const q of all) {
@@ -24,4 +24,4 @@ const rmElements = () => {
 
 }
 
-// rmElements()
+rmElements()
