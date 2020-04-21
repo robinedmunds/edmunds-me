@@ -6,6 +6,7 @@
   background-color: v.$colour-medium;
   margin: v.$padding*3 0;
   border-radius: v.$border-radius;
+  @include v.shadow(8px);
 
   &-name,
   &-1,
@@ -91,6 +92,7 @@
   grid-template-rows: repeat(2, 1fr) fit-content;
   grid-template-columns: repeat(12, 1fr) max-content;
   background-color: unset;
+  box-shadow: unset;
 
   &-name {
     grid-area: 1 / 1 / 1 / 6;
