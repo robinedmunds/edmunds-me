@@ -92,12 +92,21 @@ html {
 }
 
 
-@media only screen and (min-width: v.$desktop-min-width) {
+@media only screen and (min-width: v.$tablet-min-width) {
 
 .body-container {
   max-width: v.$max-width;
   margin: 0 auto;
 }
+
+.main-container {
+  margin: 0 (v.$padding * 2);
+}
+
+} // @media
+
+
+@media only screen and (min-width: v.$desktop-min-width) {
 
 .main-container {
   margin: 0 (v.$padding * 4);
