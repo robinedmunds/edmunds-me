@@ -43,6 +43,10 @@
 
     a {
       text-decoration: none;
+
+      &:hover {
+        animation-name: none;  // disable main.scss anim
+      }
     }
   }
 
