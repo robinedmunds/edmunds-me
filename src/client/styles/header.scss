@@ -70,6 +70,7 @@
   max-width: v.$max-width;
   opacity: 0.95;
   @include v.shadow(8px);
+  z-index: 9;
 
   &-title {
     padding: 0;
