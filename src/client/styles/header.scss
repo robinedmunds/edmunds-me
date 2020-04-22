@@ -3,7 +3,7 @@
 
 
 .header {
-  background-color: #333;
+  background-color: v.$colour-dark;
   // opacity: 0.9;
   display: flex;
   flex-direction: column;
@@ -38,11 +38,12 @@
   }
 
   &-nav-li-button {
-    background-color: #555;
+    $mobile-bgc: scale-color(v.$colour-dark, $lightness: +20%);
+    background-color: $mobile-bgc;
     padding: 0.8em 0;
 
     &:hover {
-      @include a.fade(background-color, #555, v.$colour-highlight)
+      @include a.fade(background-color, $mobile-bgc, v.$colour-highlight);
     }
 
     i {
