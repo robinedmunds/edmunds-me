@@ -8,3 +8,4 @@ import "../styles/blog.scss"
 // js
 import { Prism } from "prismjs"
 // import "../js/html-toggle"
+import "../styles/prismjs-custom.scss"
