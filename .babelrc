@@ -1,10 +1,23 @@
 {
   "plugins": [
       ["prismjs", {
-      "languages": ["css", "powershell"],
+        "languages": [
+          "js",
+          "json",
+          "http",
+          "css",
+          "scss",
+          "python",
+          "django",
+          "bash",
+          "nginx",
+          "docker",
+          "yaml",
+          "powershell",
+        ],
       "plugins": [],
-      "theme": "coy",
-      "css": true
+      "theme": "default",
+      "css": false
     }]
   ]
 }
