@@ -69,6 +69,50 @@
               <p class="blog-article-date">Posted on 1 April 2020</p>
               <div class="blog-article-body">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium praesentium beatae nam temporibus quam tempore nemo doloremque rerum perferendis. Adipisci ut debitis quis fugiat laudantium ullam laborum a necessitatibus facilis!</p>
+                <p>
+                  <pre><code class="language-css">p { color: red }</code></pre>
+                </p>
+                <p>
+                  <pre><code class="lang-clike">
+# PowerShell script to clear the ExclusionPath and ExclusionProcess arrays
+# associated with Windows Defender Anti-Virus
+# by Robin Edmunds - edmunds.me
+
+$x = Get-MpPreference
+if($x.ExclusionPath -ne $NULL) {
+write-host("================================================")
+write-host("Removing the following ExclusionPath entries : -")
+foreach ($i in $x.ExclusionPath) {
+Remove-MpPreference -ExclusionPath $i
+write-host($i)
+}
+write-host("================================================")
+write-host("Total ExclusionPath entries deleted:", $x.ExclusionPath.Count)
+}else {
+write-host("No ExclusionPath entries present. Skipping...")
+}
+if($x.ExclusionProcess -ne $NULL) {
+write-host("================================================")
+write-host("Removing the following ExclusionProcess entries : -")
+foreach ($i in $x.ExclusionProcess) {
+Remove-MpPreference -ExclusionProcess $i
+write-host($i)
+}
+write-host("================================================")
+write-host("Total ExclusionProcess entries deleted:", $x.ExclusionProcess.Count)
+}else {
+write-host("No ExclusionProcess entries present. Skipping...")
+}
+write-host("================================================")
+write-host("SUMMARY")
+write-host($x.ExclusionPath.Count, "ExclusionPath entries deleted.")
+write-host($x.ExclusionProcess.Count, "ExclusionProcess entries deleted.")
+write-host(($x.ExclusionPath.Count + $x.ExclusionProcess.Count), "Total entries deleted")
+write-host("")
+write-host("I recommend saving this output for future reference.")
+write-host("Done.")
+                  </code></pre>
+                </p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium praesentium beatae nam temporibus quam tempore nemo doloremque rerum perferendis. Adipisci ut debitis quis fugiat laudantium ullam laborum a necessitatibus facilis!</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium praesentium beatae nam temporibus quam tempore nemo doloremque rerum perferendis. Adipisci ut debitis quis fugiat laudantium ullam laborum a necessitatibus facilis!</p>
               </div>
