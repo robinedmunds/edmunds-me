@@ -12,9 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
     "sass": "^1.26.3"
   },
   "dependencies": {
+    "babel-plugin-prismjs": "^2.0.1",
     "express": "^4.17.1",
     "prismjs": "^1.20.0"
   }
