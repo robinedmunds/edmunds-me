@@ -4,4 +4,5 @@ import "../styles/header.scss"
 import "../styles/project-card.scss"
 import "../styles/blog.scss"
 
+import { Prism } from "prismjs"
 import "../js/html-toggle"
