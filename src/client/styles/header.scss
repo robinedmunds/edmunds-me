@@ -42,7 +42,7 @@
     padding: 0.8em 0;
 
     &:hover {
-      @include a.fade(background-color, $mobile-bgc, v.$colour-highlight);
+      @include a.fade(background-color, v.$colour-highlight, $mobile-bgc);
     }
 
     i {
@@ -99,6 +99,10 @@
       align-items: center;
       font-size: 2.0em;
       color: v.$colour-lightest;
+    }
+
+    &:hover {
+      @include a.fade(background-color, v.$colour-highlight);
     }
   }
 }

@@ -63,7 +63,7 @@
     @include v.shadow(6px);
 
     &:hover {
-      @include a.fade(background-color, #555, v.$colour-highlight)
+      @include a.fade(background-color, v.$colour-highlight, v.$colour-dark);
     }
   }
 

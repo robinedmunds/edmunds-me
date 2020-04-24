@@ -41,7 +41,7 @@ html {
     color: v.$colour-highlight;
 
     &:hover {
-      @include a.fade(background-color, v.$colour-light, v.$colour-dark);
+      @include a.fade(background-color, v.$colour-dark);
     }
   }
 

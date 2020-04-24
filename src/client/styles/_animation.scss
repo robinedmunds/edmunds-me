@@ -1,8 +1,9 @@
 @use "sass:string";
 @use "vars" as v;
 
+$transparent: rgba(0, 0, 0, 0);
 
-@mixin fade($property, $from-colour, $to-colour) {
+@mixin fade($property, $to-colour, $from-colour: $transparent) {
   $keyframe-id: string.unique-id();  // generates random id
 
   @keyframes #{$keyframe-id} {
