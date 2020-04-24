@@ -104,7 +104,7 @@
   &-name {
     grid-area: 1 / 1 / 1 / 6;
     display: flex;
-    background-color: #555;
+    background-color: desaturate(lighten(v.$colour-dark, 20%), 80%);
     clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
     border-radius: v.$border-radius 0 0 0;
     padding: 1.0rem;
