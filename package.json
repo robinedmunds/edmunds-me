@@ -18,6 +18,7 @@
     "sass": "^1.26.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "babel-plugin-prismjs": "^2.0.1",
     "express": "^4.17.1",
     "prismjs": "^1.20.0"
