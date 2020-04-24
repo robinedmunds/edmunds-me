@@ -37,7 +37,7 @@
 
 .blog {
   display: grid;
-  grid-template-areas: "gArticle gArticle gNav";
+  grid-template-areas: "gArticle gArticle gArticle gNav gNav";
 
   &-1 {
     grid-area: gArticle;
