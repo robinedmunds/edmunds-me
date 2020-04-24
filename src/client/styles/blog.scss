@@ -17,7 +17,11 @@
   &-nav {
     ul {
       margin: v.$padding*2 0 v.$padding*3 v.$padding*2;
-      line-height: 1.8em;
+    }
+
+    &-li {
+      padding-bottom: v.$padding/2;
+      line-height: 1.33em;
     }
 
     &-li a {
