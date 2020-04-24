@@ -20,7 +20,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "babel-plugin-prismjs": "^2.0.1",
+    "css": "^2.2.4",
     "express": "^4.17.1",
-    "prismjs": "^1.20.0"
+    "prismjs": "^1.20.0",
+    "scss": "^0.2.4"
   }
 }
