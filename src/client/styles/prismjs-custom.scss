@@ -39,10 +39,10 @@ pre[class*="language-"] {
 }
 pre[class*="language-"]>code {
 	position: relative;
-	border-left: 10px solid v.$colour-highlight;
-	box-shadow: -1px 0px 0px 0px v.$colour-highlight, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid rgba(v.$colour-highlight, 0.5);
+	box-shadow: -1px 0px 0px 0px rgba(v.$colour-highlight, 0.5), 0px 0px 0px 1px #dfdfdf;
 	background-color: #fdfdfd;
-	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: linear-gradient(transparent 50%, rgba(v.$colour-medium, 0.08) 50%);
 	background-size: 3em 3em;
 	background-origin: content-box;
 	background-attachment: local;
