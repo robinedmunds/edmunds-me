@@ -16,7 +16,9 @@
 
   &-nav {
     ul {
-      margin: v.$padding*2 0 v.$padding*3 v.$padding*2;
+      margin: v.$padding*1.5 0 v.$padding*3 v.$padding*2;
+      list-style-position: inside;
+      margin-left: v.$padding/2;
     }
 
     &-li {
