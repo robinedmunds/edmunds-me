@@ -24,10 +24,9 @@ const rmElements = () => {
 
 }
 
-const eMultiplier = (parent, child) => {
-  const n = 3  // 2 already defined in html
-  const parentE = document.querySelector(parent)
-  const first = document.querySelector(child)
+const eMultiplier = (parentID, childID, n=2) => {
+  const parent = document.querySelector(parentID)
+  const first = document.querySelector(childID)
   const fragment = document.createDocumentFragment()
 
   for (let i = 0; i < n; i++) {
@@ -35,8 +34,8 @@ const eMultiplier = (parent, child) => {
     fragment.appendChild(newChild)
   }
 
-  parentE.appendChild(fragment)
+  parent.appendChild(fragment)
 }
 
-rmElements()
-eMultiplier(".blog-1", ".blog-article")
+// rmElements()
+// eMultiplier(".blog-1", ".blog-article", 2)
