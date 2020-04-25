@@ -7,11 +7,15 @@
 
   &-article {
     // background-color: #fff;
+    padding: v.$padding*2 0;
 
     &-date {
       opacity: 0.6;
     }
 
+    &:nth-of-type(n+2) {
+      border-top: 4px solid v.$colour-medium;  // "hr"
+    }
   }
 
   &-nav {
@@ -29,6 +33,10 @@
     &-li a {
       text-decoration: none;
     }
+  }
+
+  h2 {
+    margin-top: 0;
   }
 }
 
