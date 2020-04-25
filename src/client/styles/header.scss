@@ -36,7 +36,7 @@
     }
   }
 
-  &-nav-li-button {
+  &-nav-li {
     $mobile-bgc: scale-color(v.$colour-dark, $lightness: +20%);
     background-color: $mobile-bgc;
     font-size: 1.2em;
@@ -85,7 +85,7 @@
     width: 100%;
   }
 
-  &-nav-li-button {
+  &-nav-li {
     background-color: unset;
     padding: 1.4rem;
 
