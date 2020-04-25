@@ -74,28 +74,28 @@
 
 $x = Get-MpPreference
 if($x.ExclusionPath -ne $NULL) {
-write-host("================================================")
-write-host("Removing the following ExclusionPath entries : -")
-foreach ($i in $x.ExclusionPath) {
-Remove-MpPreference -ExclusionPath $i
-write-host($i)
-}
-write-host("================================================")
-write-host("Total ExclusionPath entries deleted:", $x.ExclusionPath.Count)
-}else {
-write-host("No ExclusionPath entries present. Skipping...")
+  write-host("================================================")
+  write-host("Removing the following ExclusionPath entries : -")
+  foreach ($i in $x.ExclusionPath) {
+    Remove-MpPreference -ExclusionPath $i
+    write-host($i)
+  }
+  write-host("================================================")
+  write-host("Total ExclusionPath entries deleted:", $x.ExclusionPath.Count)
+  } else {
+    write-host("No ExclusionPath entries present. Skipping...")
 }
 if($x.ExclusionProcess -ne $NULL) {
-write-host("================================================")
-write-host("Removing the following ExclusionProcess entries : -")
-foreach ($i in $x.ExclusionProcess) {
-Remove-MpPreference -ExclusionProcess $i
-write-host($i)
-}
-write-host("================================================")
-write-host("Total ExclusionProcess entries deleted:", $x.ExclusionProcess.Count)
-}else {
-write-host("No ExclusionProcess entries present. Skipping...")
+  write-host("================================================")
+  write-host("Removing the following ExclusionProcess entries : -")
+  foreach ($i in $x.ExclusionProcess) {
+    Remove-MpPreference -ExclusionProcess $i
+    write-host($i)
+  }
+  write-host("================================================")
+  write-host("Total ExclusionProcess entries deleted:", $x.ExclusionProcess.Count)
+} else {
+  write-host("No ExclusionProcess entries present. Skipping...")
 }
 write-host("================================================")
 write-host("SUMMARY")
