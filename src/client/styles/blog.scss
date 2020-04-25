@@ -7,7 +7,7 @@
 
   &-article {
     // background-color: #fff;
-    padding: v.$padding*2 0;
+    padding-bottom: v.$padding*2;
 
     &-date {
       opacity: 0.6;
@@ -33,11 +33,12 @@
     &-li a {
       text-decoration: none;
     }
+
+    h3 {
+      margin-top: 0;
+    }
   }
 
-  h2 {
-    margin-top: 0;
-  }
 }
 
 
