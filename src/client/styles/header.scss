@@ -39,7 +39,11 @@
   &-nav-li-button {
     $mobile-bgc: scale-color(v.$colour-dark, $lightness: +20%);
     background-color: $mobile-bgc;
-    padding: 0.8em 0;
+    font-size: 1.2em;
+    padding: 1.2em 0;
+    text-align: center;
+    color: v.$colour-lightest;
+    font-family: v.$font;
 
     &:hover {
       @include a.fade(background-color, v.$colour-highlight, $mobile-bgc);
@@ -47,14 +51,6 @@
 
     i {
       display: none;
-    }
-
-    p {
-      margin: 0;
-      font-size: 1.2em;
-      text-align: center;
-      color: v.$colour-lightest;
-      font-family: v.$font;
     }
   }
 }
@@ -99,6 +95,7 @@
       align-items: center;
       font-size: 2.0em;
       color: v.$colour-lightest;
+      padding-bottom: 0.1em;
     }
 
     &:hover {
