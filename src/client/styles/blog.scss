@@ -14,7 +14,7 @@
     }
 
     &:nth-of-type(n+2) {
-      border-top: 4px solid v.$colour-medium;  // "hr"
+      border-top: 4px solid var(--colour-medium);  // "hr"
     }
   }
 

@@ -3,7 +3,7 @@
 
 
 .header {
-  background-color: v.$colour-dark;
+  background-color: var(--colour-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@
 
     h1 {
       margin: 0;
-      color: v.$colour-lightest;
+      color: var(--colour-lightest);
       text-align: center;
     }
   }
@@ -38,16 +38,16 @@
   }
 
   &-nav-li {
-    $mobile-bgc: scale-color(v.$colour-dark, $lightness: +20%);
+    $mobile-bgc: scale-color(green, $lightness: +20%);
     background-color: $mobile-bgc;
     font-size: 1.2em;
     padding: 1.2em 0;
     text-align: center;
-    color: v.$colour-lightest;
+    color: var(--colour-lightest);
     font-family: v.$font;
 
     &:hover {
-      @include a.fade(background-color, v.$colour-highlight, $mobile-bgc);
+      @include a.fade(background-color, var(--colour-highlight), $mobile-bgc);
     }
 
     i {
@@ -96,12 +96,12 @@
       flex-direction: column;
       align-items: center;
       font-size: 2.0em;
-      color: v.$colour-lightest;
+      color: var(--colour-lightest);
       padding-bottom: 0.1em;
     }
 
     &:hover {
-      @include a.fade(background-color, v.$colour-highlight);
+      @include a.fade(background-color, var(--colour-highlight));
     }
   }
 }

@@ -3,7 +3,7 @@
 
 
 .project-card {
-  background-color: v.$colour-medium;
+  background-color: var(--colour-medium);
   margin: v.$padding*3 0;
   border-radius: v.$border-radius;
   @include v.shadow(8px);
@@ -58,12 +58,12 @@
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
-    background-color: v.$colour-dark;
-    color: v.$colour-lightest;
+    background-color: var(--colour-dark);
+    color: var(--colour-lightest);
     @include v.shadow(6px);
 
     &:hover {
-      @include a.fade(background-color, v.$colour-highlight, v.$colour-dark);
+      @include a.fade(background-color, var(--colour-highlight), var(--colour-dark));
     }
   }
 
@@ -104,13 +104,13 @@
   &-name {
     grid-area: 1 / 1 / 1 / 6;
     display: flex;
-    background-color: desaturate(lighten(v.$colour-dark, 20%), 80%);
+    background-color: desaturate(lighten(green, 20%), 80%);
     clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
     border-radius: v.$border-radius 0 0 0;
     padding: 1.0rem;
 
     h2 {
-      color: v.$colour-lightest;
+      color: var(--colour-lightest);
     }
   }
 
@@ -125,10 +125,9 @@
 
   &-1,
   &-2 {
-    background-color: v.$colour-medium;
+    background-color: var(--colour-medium);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: space-around;
     align-items: center;
     padding: v.$padding*2;
