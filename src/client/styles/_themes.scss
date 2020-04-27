@@ -2,11 +2,19 @@
 
 
 @mixin gen-css-vars($col) {
-    --colour-dark: #{map.get($col, "dark")};
-    --colour-medium: #{map.get($col, "medium")};
-    --colour-light: #{map.get($col, "light")};
-    --colour-lightest: #{map.get($col, "lightest")};
-    --colour-highlight: #{map.get($col, "highlight")};
+  $dark: map.get($col, "dark");
+  $medium: map.get($col, "medium");
+  $light: map.get($col, "light");
+  $lightest: map.get($col, "lightest");
+  $highlight: map.get($col, "highlight");
+  $header-mobile: scale-color(map.get($col, "dark"), $lightness: +10%);
+
+  --colour-dark: #{$dark};
+  --colour-medium: #{$medium};
+  --colour-light: #{$light};
+  --colour-lightest: #{$lightest};
+  --colour-highlight: #{$highlight};
+  --colour-header-mobile: #{$header-mobile};
 }
 
 @mixin default {

@@ -63,8 +63,8 @@ html {
 
   strong {
     font-weight: bold;
-    background-color: v.$colour-dark;
-    color: v.$colour-lightest;
+    background-color: var(--colour-dark);
+    color: var(--colour-lightest);
   }
 
   em {
@@ -88,7 +88,7 @@ html {
   }
 
   hr {
-    $colour: rgba(var(--colour-dark), 0.2);
+    $colour: rgba(#{var(--colour-dark)}, 0.2);
     display: block;
     margin-top: 2rem;
     margin-bottom: 0.5em;

@@ -38,8 +38,7 @@
   }
 
   &-nav-li {
-    $mobile-bgc: scale-color(green, $lightness: +20%);
-    background-color: $mobile-bgc;
+    background-color: var(--colour-header-mobile);
     font-size: 1.2em;
     padding: 1.2em 0;
     text-align: center;
@@ -47,7 +46,7 @@
     font-family: v.$font;
 
     &:hover {
-      @include a.fade(background-color, var(--colour-highlight), $mobile-bgc);
+      @include a.fade(background-color, var(--colour-highlight), var(--colour-header-mobile));
     }
 
     i {
