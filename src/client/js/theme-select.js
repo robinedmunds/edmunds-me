@@ -7,23 +7,25 @@ const THEMES = [
   "theme-orange-brown"
 ]
 
-const themeSelect = (name) => {
-  if (THEMES.includes(name)) {
-    const e = document.querySelector("html")
-    e.classList = []
-    e.classList.add(name)
-    // console.log(`-- Theme set to: ${name}`)
-  }
+const setTheme = (newTheme) => {
+  if (!THEMES.includes(newTheme)) return
+  const rgxTheme = /theme-.*/
+  const e = document.querySelector("html")
+  const currentThemes = Array.from(e.classList).filter(theme => {
+    if (rgxTheme.test(theme)) {return theme}
+  })
+  currentThemes.forEach(theme => e.classList.remove(theme))
+  e.classList.add(newTheme)
 }
 
-const themeNext = () => {
+const nextTheme = () => {
   const e = document.querySelector("html")
   const currentTheme = e.classList[0]
   let themeIndex = THEMES.indexOf(currentTheme)
   if (themeIndex >= THEMES.length-1) {themeIndex = 0}
   else {themeIndex++}
-  themeSelect(THEMES[themeIndex])
+  setTheme(THEMES[themeIndex])
 }
 
-themeSelect(THEMES[0])
-window.setInterval(themeNext, 3000)
+setTheme(THEMES[0])
+window.setInterval(nextTheme, 3000)
