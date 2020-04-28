@@ -1,13 +1,13 @@
 "use strict"
 
 
-const themeSelect = (name) => {
-  const themes = [
-    "theme-default",
-    "theme-teal-fleece",
-    "theme-orange-brown"
-  ]
+const themes = [
+  "theme-default",
+  "theme-teal-fleece",
+  "theme-orange-brown"
+]
 
+const themeSelect = (name) => {
   if (themes.includes(name)) {
     const e = document.querySelector("html")
     e.classList = []
@@ -16,6 +16,17 @@ const themeSelect = (name) => {
   }
 }
 
-themeSelect("theme-default")
-// themeSelect("theme-teal-fleece")
-// themeSelect("theme-orange-brown")
+const themeNext = () => {
+  const e = document.querySelector("html")
+  const current = e.classList[0]
+  let idx = themes.indexOf(current)
+  if (idx < themes.length-1) {
+    idx++
+  } else {
+    idx = 0
+  }
+  themeSelect(themes[idx])
+}
+
+themeSelect(themes[0])
+window.setInterval(themeNext, 9000)
