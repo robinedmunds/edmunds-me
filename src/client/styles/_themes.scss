@@ -8,6 +8,10 @@
   $lightest: map.get($col, "lightest");
   $highlight: map.get($col, "highlight");
   $header-mobile: scale-color(map.get($col, "dark"), $lightness: +10%);
+  $prism-accent: rgba($highlight, 0.5);
+  $prism-bg: rgba($dark, 0.05);
+  // $project-card-tab: scale-color($highlight, $lightness: -50%);
+  $project-card-tab: $highlight;
 
   --colour-dark: #{$dark};
   --colour-medium: #{$medium};
@@ -15,6 +19,9 @@
   --colour-lightest: #{$lightest};
   --colour-highlight: #{$highlight};
   --colour-header-mobile: #{$header-mobile};
+  --colour-prism-accent: #{$prism-accent};
+  --colour-prism-bg: #{$prism-bg};
+  --colour-project-card-tab: #{$project-card-tab};
 }
 
 @mixin default {
