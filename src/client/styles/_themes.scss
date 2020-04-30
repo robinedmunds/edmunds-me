@@ -58,3 +58,17 @@
   );
   @include gen-css-vars($col);
 }
+
+.theme {
+  &-default {
+    @include default;
+  }
+
+  &-teal-fleece {
+    @include teal-fleece;
+  }
+
+  &-orange-brown {
+    @include orange-brown;
+  }
+}

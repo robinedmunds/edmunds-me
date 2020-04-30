@@ -1,21 +1,7 @@
 @use "vars" as v;
 @use "animation" as a;
-@use "themes" as t;
+@use "themes";
 
-
-.theme {
-  &-default {
-    @include t.default;
-  }
-
-  &-teal-fleece {
-    @include t.teal-fleece;
-  }
-
-  &-orange-brown {
-    @include t.orange-brown;
-  }
-}
 
 html {
   font-size: v.$font-size;
