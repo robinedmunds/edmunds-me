@@ -1,6 +1,11 @@
 @use "vars" as v;
 @use "animation" as a;
+@use "reset";
 @use "themes";
+@use "header";
+@use "project-card";
+@use "blog";
+@use "prismjs";
 
 
 html {
