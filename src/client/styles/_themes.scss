@@ -11,7 +11,7 @@
   $prism-accent: rgba($highlight, 0.5);
   $prism-bg: rgba($dark, 0.05);
   // $project-card-tab: scale-color($highlight, $lightness: -50%);
-  $project-card-tab: $highlight;
+  $project-card-tab: rgba($dark, 0.9);
 
   --colour-dark: #{$dark};
   --colour-medium: #{$medium};
